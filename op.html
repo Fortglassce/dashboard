@@ -2,31 +2,51 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="3600; url=https://fortglassce.github.io/dashboard/op.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Power BI</title>
+  <meta http-equiv="refresh" content="3600; url=https://fortglassce.github.io/dashboard/op.html">
+  <title>Dashboard Power BI - Tela Cheia</title>
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: black;
+      background-color: #000; /* tela preta para bordas */
       height: 100%;
       width: 100%;
-      cursor: none;
+      cursor: none; /* Esconde o cursor */
     }
 
     iframe {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
       width: 100vw;
+      height: 100vh;
       border: none;
+    }
+
+    @media screen and (orientation: portrait) {
+      body::before {
+        content: "Por favor, gire a TV para o modo paisagem (horizontal)";
+        color: white;
+        font-size: 3vw;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+      }
+
+      iframe {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
-  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMTEwNWViNDYtN2RmNi00YjVhLWEzMTMtODBiNTk1YjJkMTMyIiwidCI6ImI4MDk1MzE3LWViZjQtNDI2MS1iMzJmLWQ1OTEzNWU4YmQ1ZSJ9" allowfullscreen></iframe>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiMTEwNWViNDYtN2RmNi00YjVhLWEzMTMtODBiNTk1YjJkMTMyIiwidCI6ImI4MDk1MzE3LWViZjQtNDI2MS1iMzJmLWQ1OTEzNWU4YmQ1ZSJ9" 
+    allowfullscreen
+  ></iframe>
 </body>
 </html>
