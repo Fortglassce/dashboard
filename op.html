@@ -2,35 +2,54 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Atualização automática -->
   <meta http-equiv="refresh" content="3600;url=https://fortglassce.github.io/dashboard/op.html">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Dashboard Power BI</title>
+
   <style>
-    body {
-      margin: 0;
-      overflow: hidden;
+
+    /* RESET */
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    .ajuste {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 102%;
-      height: 110%;
-      border: none;
+    /* FUNDO GERAL */
+    body{
+      overflow:hidden;
+      background-color:#0B1220;
+      font-family:Segoe UI, sans-serif;
     }
+
+    /* IFRAME */
+    .ajuste{
+      position:absolute;
+      top:0;
+      left:0;
+      width:102%;
+      height:110%;
+      border:none;
+      background-color:#0B1220;
+    }
+
   </style>
 </head>
-<body>
-  
 
-<iframe class="ajuste"
-  src="https://app.powerbi.com/view?r=eyJrIjoiM2QzODAxYTAtZThjNC00N2ViLWI3ZDItMjM5MmQ4M2M2MjM1IiwidCI6ImI4MDk1MzE3LWViZjQtNDI2MS1iMzJmLWQ1OTEzNWU4YmQ1ZSJ9"allowFullScreen="true">
-  
-    
+<body>
+
+  <!-- DASHBOARD PRINCIPAL -->
+  <iframe
+    class="ajuste"
+    src="https://app.powerbi.com/reportEmbed?reportId=4c6bf03f-2ad0-477e-9e09-d1ad106b3471&autoAuth=true&ctid=b8095317-ebf4-4261-b32f-d59135e8bd5e"
+    allowfullscreen="true">
   </iframe>
+
+
+
 </body>
 </html>
-
-
-
