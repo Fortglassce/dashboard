@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
 
-  <meta http-equiv="refresh"
-    content="3600;url=https://fortglassce.github.io/dashboard/op.html">
+  <!-- Atualização automática -->
+  <meta http-equiv="refresh" content="3600;url=https://fortglassce.github.io/dashboard/op.html">
 
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Dashboard Power BI</title>
 
   <style>
 
-    html,
-    body{
-      width:100%;
-      height:100%;
+    /* RESET */
+    *{
       margin:0;
       padding:0;
-      overflow:hidden;
-      background:#0B1220;
+      box-sizing:border-box;
     }
 
+    /* FUNDO GERAL */
     body{
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      overflow:hidden;
+      background-color:#0B1220;
+      font-family:Segoe UI, sans-serif;
     }
 
+    /* IFRAME */
     .ajuste{
-      width:100vw;
-      height:100vh;
+      position:absolute;
+      top:0;
+      left:0;
+      width:102%;
+      height:110%;
       border:none;
-      background:#0B1220;
-      display:block;
+      background-color:#0B1220;
     }
 
   </style>
@@ -43,12 +42,14 @@
 
 <body>
 
+  <!-- DASHBOARD PRINCIPAL -->
   <iframe
     class="ajuste"
     src="https://app.powerbi.com/reportEmbed?reportId=4c6bf03f-2ad0-477e-9e09-d1ad106b3471&autoAuth=true&ctid=b8095317-ebf4-4261-b32f-d59135e8bd5e"
     allowfullscreen="true">
   </iframe>
 
-</body>
 
+
+</body>
 </html>
